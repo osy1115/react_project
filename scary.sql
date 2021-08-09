@@ -13,8 +13,8 @@
 
 
 -- scary 데이터베이스 구조 내보내기
-CREATE DATABASE IF NOT EXISTS `scary` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `scary`;
+CREATE DATABASE IF NOT EXISTS `storycollector` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `storycollector`;
 
 -- 테이블 scary.test_list 구조 내보내기
 CREATE TABLE IF NOT EXISTS `test_list` (
@@ -37,10 +37,10 @@ CREATE TABLE IF NOT EXISTS `test_page` (
 CREATE TABLE IF NOT EXISTS `test_page_text` (
   `id` int(2) DEFAULT NULL,
   `page_id` int(2) DEFAULT NULL,
-  `answer1` varchar(20) DEFAULT NULL,
-  `answer2` varchar(20) DEFAULT NULL,
-  `answer3` varchar(20) DEFAULT NULL,
-  `answer4` varchar(20) DEFAULT NULL,
+  `answer1` varchar(30) DEFAULT NULL,
+  `answer2` varchar(30) DEFAULT NULL,
+  `answer3` varchar(30) DEFAULT NULL,
+  `answer4` varchar(30) DEFAULT NULL,
   `info` text DEFAULT NULL,
   `kakaotalk` text DEFAULT NULL,
   `point1` varchar(11) DEFAULT NULL,
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `test_result` (
   `id` int(2) DEFAULT NULL,
   `list_id` int(2) DEFAULT NULL,
   `result_step` int(1) DEFAULT NULL,
-  `result_subject` varchar(20) DEFAULT NULL,
+  `result_subject` varchar(50) DEFAULT NULL,
   `result_sub` text DEFAULT NULL,
   `stat1` varchar(6) DEFAULT NULL,
   `stat2` varchar(6) DEFAULT NULL,
