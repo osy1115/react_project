@@ -1,13 +1,8 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "wnsqls2",
     "database": "storycollector",
-=======
-    "password": "penguin",
-    "database": "StoryCollector",
->>>>>>> 59c25d61a9bf5d09b24def4f709281c6f9638598
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
