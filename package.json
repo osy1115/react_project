@@ -10,7 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+<<<<<<< HEAD
     "cors": "^2.8.5",
+=======
+>>>>>>> 79561a412035a2f9991b15bea67d786dd7dfa17d
     "express": "^4.17.1",
     "init": "^0.1.2",
     "mysql": "^2.18.1",
