@@ -57,6 +57,10 @@ app.post('/result/:id', async (req,res)=>{
     res.json({result})
 })
 
+app.get('/',(res,req)=>{
+    res.send('hi server!')
+})
+
 
 app.listen(3000,(req,res)=>{
     console.log(`server start port : ${3000}`)
