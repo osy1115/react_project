@@ -57,7 +57,7 @@ app.post('/result/:id', async (req,res)=>{
     res.json({result})
 })
 
-app.get('/',(res,req)=>{
+app.get('/',(req,res)=>{
     res.send('hi server!')
 })
 
