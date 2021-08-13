@@ -18,10 +18,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(20),
       allowNull: true
     },
-    result_sub: {
-      type: DataTypes.TEXT,
-      allowNull: true
-    },
     stat1: {
       type: DataTypes.STRING(6),
       allowNull: true
