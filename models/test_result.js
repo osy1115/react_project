@@ -33,7 +33,11 @@ module.exports = function(sequelize, DataTypes) {
     stat4: {
       type: DataTypes.STRING(6),
       allowNull: true
-    }
+    },
+    result_content: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
   }, {
     sequelize,
     tableName: 'test_result',
