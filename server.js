@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const {sequelize, test_page_text, test_result} = require('./models');
+const {sequelize, test_page_text, test_result, test_list} = require('./models');
 
 app.use(bodyParser.urlencoded({extended:false,}))
 
@@ -57,11 +57,21 @@ app.post('/result/:id', async (req,res)=>{
     res.json({result})
 })
 
+app.post('/main/:id', async (req,res) =>{
+    console.log(req.params.id)
+    let testlist = await test_list.findOne({
+        where : {
+            id : req.params.id
+        }
+    })
+    res.json({testlist})
+})
+
 app.get('/',(req,res)=>{
     res.send('hi server!')
 })
 
 
-app.listen(3000,(req,res)=>{
-    console.log(`server start port : ${3000}`)
+app.listen(3306,(req,res)=>{
+    console.log(`server start port : ${3306}`)
 })
